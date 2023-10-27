@@ -1,27 +1,37 @@
-# ExampleProject
+# angular-installation-example
+Ejemplo práctico 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+### Comandos para la instalación de Angular
 
-## Development server
+#### 1. Instalar la última versión de npm
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`$ npm install -g npm@latest`
 
-## Code scaffolding
+#### 2. Borrar el cache de npm
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`$ npm cache clean --force`
 
-## Build
+#### 3. Desactivar las auditorias de npm para evitar fallos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`$ npm set audit false`
 
-## Running unit tests
+#### 4. Desinstalar versiones anteriores de angular (no es necesario ejecutar si es la primera vez)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`$ npm uninstall -g angular-cli`
+`$ npm uninstall -g @angular/cli`
 
-## Running end-to-end tests
+#### 5. Limpiar de nuevo cache
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`$ npm cache clean --force`
 
-## Further help
+#### 6. Instalar la última versión de Angular CLI
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`$ npm install -g @angular/cli@latest`
+
+### Ejecutar la aplicación
+
+`$ ng serve`
+
+### URL de acceso a la aplicación
+
+Access to `<link>` : <http://localhost:4200>
